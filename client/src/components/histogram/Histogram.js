@@ -92,8 +92,8 @@ const HistogramComponent = () => {
       <Histogram
         xLabels={labels}
         yValues={datas}
-        width="800"
-        height="400"
+        width="1600"
+        height="600"
         options={options}
       />
     </Div>

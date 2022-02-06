@@ -54,7 +54,7 @@ export default function TableHeadComponent({
     >
       <TableSortLabel
         disabled={headCell.label === 'Description'}
-        active
+        active={headCell.label !== 'Description'}
         direction={direction}
         onClick={() => handleClick(headCell.id)}
       >

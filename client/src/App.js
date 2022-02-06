@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/event/:id" element={<EventPage />} />
-        <Route path="/miaou" element={<HistogramComponent />} />
+        <Route path="/histogram" element={<HistogramComponent />} />
       </Routes>
     </div>
   );
