@@ -2,7 +2,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-
+### `npm install`
+Avant de pouvoir tester l'app.<br>
+1- Faire un npm install à la racine du projet.<br>
+2- Faire un npm install à la racine du dossier client.<br>
 
 ### `npm run dev`
 Dans ce projet vous pouvez lancer simultanément le serveur (node.js) et l'app React  (client):.<br>
