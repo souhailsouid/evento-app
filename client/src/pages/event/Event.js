@@ -7,7 +7,6 @@ import CommentsList from 'components/comment/Comment.jsx';
 import { Article, Section } from './Event.style.js';
 function EventPage() {
   const params = useParams();
-  console.log('eventpage', params, params.id);
 
   const [refreshData, setRefreshData] = useState(0);
 

@@ -3,10 +3,10 @@ import Axios from 'axios';
 const PostEvent = (data) => {
   Axios.post('http://localhost:4000/api/new-event', data)
     .then((res) => {
-      console.log('post-res', res);
+      return res;
     })
     .catch((err) => {
-      console.log('err_request', err, err?.response);
+      console.error('err_request_post_event', err, err?.response);
     });
 };
 export default PostEvent;

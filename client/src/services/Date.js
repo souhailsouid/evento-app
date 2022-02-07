@@ -28,7 +28,7 @@ export const convertIntoFrenchDate = (date, numeric) => {
 export const isEventSoon = (date) => {
   const currentDate = new Date();
   const dateInTenDays = new Date();
-  dateInTenDays.setDate(currentDate.getDate() + 10);
+  dateInTenDays.setDate(currentDate.getDate() + 11);
 
   const dateToCompare = new Date(date).getTime();
   const deadline = new Date(dateInTenDays).getTime();
@@ -45,7 +45,7 @@ export const isEventPast = (date) => {
 export const isEventPastSinceTenDays = (date) => {
   const currentDate = new Date();
   const dateTenDaysAgo = new Date();
-  dateTenDaysAgo.setDate(currentDate.getDate() - 10);
+  dateTenDaysAgo.setDate(currentDate.getDate() - 11);
 
   const dateToCompare = new Date(date).getTime();
   const deadline = new Date(dateTenDaysAgo).getTime();
@@ -64,7 +64,7 @@ export const filterArrayByDate = (data, order) => {
 
 const getDatesBetweenDates = (startDate, endDate) => {
   let dates = [];
-  //to avoid modifying the original date
+
   const theDate = new Date(startDate);
   while (theDate < endDate) {
     dates = [...dates, new Date(theDate)];
@@ -76,9 +76,9 @@ const getDatesBetweenDates = (startDate, endDate) => {
 export const labelsDiagram = () => {
   const today = new Date();
   const tendaysFromNow = new Date(today);
-  tendaysFromNow.setDate(tendaysFromNow.getDate() + 10);
+  tendaysFromNow.setDate(tendaysFromNow.getDate() + 11);
   const tendaysAgoFromNow = new Date(today);
-  tendaysAgoFromNow.setDate(tendaysAgoFromNow.getDate() - 10);
+  tendaysAgoFromNow.setDate(tendaysAgoFromNow.getDate() - 11);
 
   return getDatesBetweenDates(tendaysAgoFromNow, tendaysFromNow);
 };

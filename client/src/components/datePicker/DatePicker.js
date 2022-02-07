@@ -18,7 +18,6 @@ const maskMap = {
 export default function InputDate({ name, control, errors, value, setValue }) {
   const [locale] = React.useState('fr');
 
-  console.log('localeMap[locale]', localeMap[locale]);
   return (
     <LocalizationProvider
       dateAdapter={AdapterDateFns}

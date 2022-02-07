@@ -159,6 +159,5 @@ module.exports = {
   GetEventList,
   GetEventById,
   AddNewEvent,
-  AddCommentToExistingEvent
-
+  AddCommentToExistingEvent,
 };
